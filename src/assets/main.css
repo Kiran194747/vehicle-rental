@@ -1,0 +1,94 @@
+@import './base.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+    font-family: Verdana, Segoe, Sans-serif, serif;
+    color: #181818;
+    .header {
+        display: flex;
+        background-color: #b62218;
+        justify-items: center;
+
+        .logo {
+            width: 50px;
+            @apply m-2;
+        }
+
+        .contact {
+            margin-left: auto;
+            color: white;
+            font-size: 16px;
+            align-content: center;
+            margin-right: 10px;
+            @apply my-3 px-5 cursor-pointer;
+            border: 1px solid #931810;
+            background-color: #931810;
+            border-radius: 25px;
+
+        }
+    }
+
+    .main-class {
+        min-width: 40vw;
+        @apply flex-1;
+        @apply mx-auto flex flex-col justify-center items-center content-center;
+
+        .page-content {
+            @apply m-3;
+            background-color: #faf8f8;
+            min-width: 40vw;
+            padding: 20px;
+            .buttons{
+                margin-top: 30px;
+                display: flex;
+                justify-content: space-around;
+                & button {
+                    border: 1px solid green;
+                    padding: 10px 30px;
+                    background-color: green;
+                    color: white;
+                    border-radius: 25px;
+                }
+            }
+        }
+    }
+
+    .page-title {
+        text-align: center;
+        font-size: 30px;
+        margin-top: 10px;
+        font-weight: bold;
+    }
+
+    .type-of-vehicle{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        .vehicle{
+            cursor: pointer;
+            margin-top: 30px;
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 10px 20px;
+            text-align: center;
+            .img{
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+
+    .model-type{
+        width: 150px;
+        height: 52px;
+        padding: 14px 10px 14px 10px;
+        border-radius: 5px;
+        border: 1px solid #CDD4DA;
+        margin-right: 5px;
+        background-color: white;
+
+    }
+
+}
